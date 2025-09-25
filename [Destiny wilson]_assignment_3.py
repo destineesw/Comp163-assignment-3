@@ -89,3 +89,14 @@ elif final_choice == "Social":
     print("Youve chosen your fate. You socialize!!")
 else:
     print("No choice was made.")
+
+print("\n--- Final Semester Assessment ---")
+
+if current_gpa <= 3.2 and social_points > 50:
+    print("Congratulations you have good grades and you need to socialize less")
+elif current_gpa <= 3.7 and social_points > 40:
+    print("Congratulations you have good grades and you have a perfect social life")
+elif current_gpa >= 3.2 and not social_points > 50:
+    print("You can do better if you spend a little bit less time socializing.")
+elif current_gpa is not 3.7:
+    print("Congratulations, you have excelled academically and  deserve an amazing social life!")
