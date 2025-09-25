@@ -59,4 +59,33 @@ if study_choice in study_options:
     else:
         current_gpa += 0.05    
 elif study_choice not in study_options: 
+    print("No changes to GPA or Social points!")study_options = ["Programming", "Math", "English", "History"]
+study_choice = input("Your study option: ")
+
+
+if study_choice in study_options:
+    print("You chose", study_choice, "as your study option!")
+    
+    if study_choice == "Math" or study_choice == "Programming":
+        current_gpa += 0.2
+        social_points -= 5
+    elif study_choice == "English":
+        current_gpa += 0.1
+        social_points += 5
+    else:
+        current_gpa += 0.05    
+elif study_choice not in study_options: 
     print("No changes to GPA or Social points!")
+
+
+final_choice = input("Focus or Social?")
+if final_choice == "Focus":
+    current_gpa +- 0.5
+    social_points -= 3
+    print("You've chosen your fate. You study!!")
+elif final_choice == "Social":
+    current_gpa += 0.2
+    social_points += 5
+    print("Youve chosen your fate. You socialize!!")
+else:
+    print("No choice was made.")
